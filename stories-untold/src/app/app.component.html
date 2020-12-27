@@ -71,7 +71,7 @@
     <tbody>
         <tr>
             <td>
-                {{gameState.timeTravel.entropy }} / {{gameState.timeTravel.freeLevels}} 
+                {{gameState.timeTravel.entropy }} / {{gameState.timeTravel.getFreeLevels()}} 
             </td>
             <td>
                 {{gameState.timeTravel.timeCrystalLevel}} 
@@ -108,6 +108,7 @@
                 <button (click)="getAdventure()" [disabled]="gameState.adventure.coolDown > 0">
                     Look for an adventure!
                 </button>
+                Day {{gameState.adventure.days}}
             </th>
         </tr>
         </thead>

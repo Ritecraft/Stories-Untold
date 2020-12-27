@@ -62,7 +62,7 @@ getAdventure() {
     this.messages.push(message);
     if(this.messages.length > 20)
     {
-      this.messages = this.messages.splice(0,1);
+      this.messages.splice(0,1);
     }
   }
 }
